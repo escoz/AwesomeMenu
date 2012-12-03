@@ -18,8 +18,8 @@
     int _flag;
     NSTimer *_timer;
     AwesomeMenuItem *_addButton;
-    
-    id<AwesomeMenuDelegate> _delegate;
+
+    __unsafe_unretained id<AwesomeMenuDelegate> _delegate;
     BOOL _isAnimating;
 }
 @property (nonatomic, copy) NSArray *menusArray;
